@@ -3,6 +3,7 @@ import morgan from "morgan";
 import cors from "cors";
 import globalErrorHandler from "./middleware/errors/globalErrorHandler";
 import { routes } from "./routes";
+import database from './config/database'
 
 
 
