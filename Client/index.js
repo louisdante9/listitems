@@ -8,4 +8,12 @@ let values = [
   { name: "Jonas", city: "Berlin" },
 ];
 
-export { options, values };
+const fetchApi = () => {
+    fetch('http://localhost:3000/v1', {method: 'POST'}).then(res=> res.json()).then((data)=> console.log(data))
+   
+    
+}
+const test = () => {
+    console.log('hello there')
+}
+export { options, values, fetchApi, test };
