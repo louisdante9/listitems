@@ -6,14 +6,18 @@
     <title>List items</title>
 </head>
 <body>
-    <div id="list-items">
-    <ul class="list"></ul>
+    <!-- <div id="list-items">
+    <ul class="list"></ul> -->
+    <button id="loadData">Fetch Data</button>
 </div>
 </body>
-<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script> -->
 <script type="module">
-    import {options, values} from './index.js';
+    import {options, values, fetchApi, test} from './index.js';
     //use list here
-    var listItems = new List("list-items", options, values);
+    const loadData = document.getElementById('loadData');
+    loadData.addEventListener('click', fetchApi)
+    
+    // var listItems = new List("list-items", options, values);
 </script>
 </html>
