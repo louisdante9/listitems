@@ -5,7 +5,7 @@ import cors from "cors";
 import globalErrorHandler from "./middleware/errors/globalErrorHandler";
 import { routes } from "./routes";
 import db from "./config/database";
-import insertData from './models/model1'
+import insertData from './models/model1.ts'
 
 
 const app = express();
